@@ -1,0 +1,40 @@
+#include <stdio.h> //директивы препроцессора
+
+#include <conio.h>
+
+#include <math.h>
+
+int main()
+
+{
+
+float x, a, b, c; //описание переменных
+
+printf("\n Lab rab №1");
+
+printf("\n Vr 13");
+
+printf("\nPI-21-1");
+
+printf("\nKovalchukArina\n");
+
+printf("\nx="); //ввод исходных данных
+
+scanf("%f", &x);
+
+a= 1 / (x + (1 / x * x + (1 / x * x * x +( 1 / x * x * x * x + (1 / x * x * x * x * x)))));
+
+b = 1 / sqrt (x + 1 /pow(sqrt(x + 1/pow(sqrt(x),1.0/4.0)),1.0/3.0));
+
+c =  x/( 1+ (x*x/1 + (x*x*x/ 1 +  (x*x*x*x/1)))); 
+
+printf("\ns=%5.3f", a); //вывод результата
+
+printf("\nr=%5.3f", b);
+
+printf("\nr=%5.3f", c);
+printf("\n");
+system("pause");
+return 0;
+
+}
